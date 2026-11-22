@@ -15,6 +15,8 @@
 //
 // Outside the grader's container, MAKEFUN_BOT_DIR and MAKEFUN_OUTPUT_DIR stand in for /bot and /output:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+// My note: this program only copies VIDEO.json to the output, since the TikTok video itself is the actual entry here.
+// Also worth noting: the video's URL sits in VIDEO.json, and the gate picks it up from the copy that lands in /output.
 
 import { copyFileSync, mkdirSync } from 'node:fs';
 import { join } from 'node:path';
