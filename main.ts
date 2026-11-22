@@ -18,6 +18,10 @@
 // Repost note (2026-11-22): the first TikTok upload of the ad went out as a photo post, which the gate refuses,
 // so Elvin posted the same video again the same day, this time as a proper video post. VIDEO.json now names that
 // second upload — the video id in it is the repost, not the original photo post.
+// Second repost note (2026-11-22): the second upload also landed as a photo post — TikTok's create flow had kept
+// the photo mode from the first attempt, so that submission was refused for the same reason. Elvin posted the ad a
+// third time, this time through the "Video baru" flow, and confirmed in the editor that the preview actually plays
+// and moves before posting. VIDEO.json now names that third post; its video id supersedes both earlier uploads.
 // My note: this program only copies VIDEO.json to the output, since the TikTok video itself is the actual entry here.
 // Also worth noting: the video's URL sits in VIDEO.json, and the gate picks it up from the copy that lands in /output.
 
