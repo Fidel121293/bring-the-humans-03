@@ -15,6 +15,9 @@
 //
 // Outside the grader's container, MAKEFUN_BOT_DIR and MAKEFUN_OUTPUT_DIR stand in for /bot and /output:
 //   mkdir -p out && MAKEFUN_BOT_DIR=. MAKEFUN_OUTPUT_DIR=out node main.ts
+// Repost note (2026-11-22): the first TikTok upload of the ad went out as a photo post, which the gate refuses,
+// so Elvin posted the same video again the same day, this time as a proper video post. VIDEO.json now names that
+// second upload — the video id in it is the repost, not the original photo post.
 // My note: this program only copies VIDEO.json to the output, since the TikTok video itself is the actual entry here.
 // Also worth noting: the video's URL sits in VIDEO.json, and the gate picks it up from the copy that lands in /output.
 
